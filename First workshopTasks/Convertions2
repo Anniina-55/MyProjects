@@ -1,0 +1,21 @@
+
+process.stdout.write("Please enter a number in miles: ");
+process.stdin.on("data", function (inputFromUser) {
+    
+    let givenInput = Number (inputFromUser);
+    let milesToKm = givenInput * 1.609344;
+    let yards = givenInput * 1.0936133;
+    let feet = givenInput * 3.2808399;
+    let inches = givenInput * 39.3700787;
+    let lightYears = givenInput * (1.05702341 * 10**16);
+
+process.stdout.write("Distance in kilometers: "  + milesToKm + "\n" +
+    "Distance in feet: " + feet + " \n" + 
+    "Distance in inches: " + inches + " \n" +
+    "Distance in yards: " + yards + " \n" +
+    "Distance in lightYears: " + lightYears + "\n"); 
+   
+   
+    process.exit();
+
+});

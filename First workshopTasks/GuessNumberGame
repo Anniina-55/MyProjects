@@ -1,0 +1,25 @@
+
+const readline = require("readline"); 
+
+// Create an interface for input and output
+const rl = readline.createInterface({ 
+    input: process.stdin, 
+    output: process.stdout
+});
+
+// Ask the user to enter a number
+rl.question("Please enter a number: ", (userInput) => {
+    // Convert the input to a number
+    let userNumber = Number(userInput);
+    
+    let computerNumber = Math.floor(Math.random() * (100 - 2 + 1));
+    // Add +one to the user's number to get the secret number
+    let secretNumber = userNumber + computerNumber;
+    
+    // Inform the user about the secret number
+    console.log("You typed in " + userNumber + ". My number is " + computerNumber + ".\n" +
+         "Sorry, you lost. I won.\nThe game is over.");
+    
+    // Close the readline interface
+    rl.close();
+});

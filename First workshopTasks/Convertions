@@ -1,0 +1,60 @@
+
+
+// Make readline to get user input
+const readline = require("readline");
+
+// interface reads input from the command line (process.stdin ja .stdout tässä)
+const rl = readline.createInterface({ 
+    input: process.stdin,
+    output: process.stdout
+});
+
+// Ask the user to enter value in miles
+rl.question("Please enter the distance in miles: ",  (userInput) => {
+
+        // convert the users input in strings to number
+        let milesToNumber = Number(userInput);
+
+        // Calculate kilometers
+        let kilometers = milesToNumber * 1.609344;
+
+        console.log("Distance in kilometers: " + kilometers);
+
+        rl.close();
+    });
+ // rl.close ends the input
+
+
+ // 1 meter = 1.0936133 yards
+ // 1 meter = 3.2808399 feet
+ // 1 meter = 39.3700787 inches
+ // 1 meter = 1.05702341 × 10-16 light years
+
+ // Make the readline for user input interface
+ const readline = require("readline");
+ const rl = readline.createInterface ({
+        input:process.stdin,
+        output: process.stdout
+ });
+ // ask the user to enter number in meters
+rl.question("Please enter the distance in meters:", (userInput) => {
+    let metersToNumber = Number (userInput);
+    let yards = metersToNumber * 1.0936133;
+
+   console.log("Distance in yards:" + yards); 
+   rl.close()
+
+}); 
+
+
+
+ // padStart 
+let testString = "Hello";
+letTestNumber = 55;
+process.stdout.write(testNumber.padStart(55))
+
+
+
+
+ 
+
