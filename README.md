@@ -23,7 +23,7 @@ This repository contains workshop tasks and coding exercises from my learning jo
 ## Future Plans:
 I plan to add more projects, including personal projects, web applications and front-end development projects as I continue learning and building my skills.
 
-# Repository Structure
+## Repository Structure
 
 MyProjects/
 │
