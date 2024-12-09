@@ -23,8 +23,8 @@ This repository contains workshop tasks and coding exercises from my learning jo
 ## Future Plans:
 I plan to add more projects, including personal projects, web applications and front-end development projects as I continue learning and building my skills.
 
-## Repository Structure
-
+# Repository Structure
+```
 MyProjects/
 │
 ├── main/                        # Contains the general README for the entire repository
@@ -43,3 +43,4 @@ MyProjects/
 │   ├── Conditionals/            # Folder for conditional-related tasks
 │   ├── Loops/                   # Folder for loop-related tasks
 │   ├── FirstWorkshopTasks/      # Folder for basic tasks
+```
